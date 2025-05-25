@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CREATIVE mode photography</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo-creativemode.png" type="image/x-icon">
+  <button id="toTopBtn" title="Go to top">
+  <img src="arrow.png" alt="Go to top" style="width:35px; height:35px;">
+</button>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATIVE mode Photography</title>
+    
+    </head>
+   <script>
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      loader.classList.add("hidden");
+      setTimeout(() => loader.style.display = "none", 500);
+    });
+  const toTopBtn = document.getElementById('toTopBtn');
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      toTopBtn.style.display = 'block';
+    } else {
+      toTopBtn.style.display = 'none';
+    }
+  };
+
+  toTopBtn.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+ document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".slider-track");
+    const slides = document.querySelectorAll(".slider-track img");
+    const prevBtn = document.querySelector(".slider-btn.prev");
+    const nextBtn = document.querySelector(".slider-btn.next");
+    let index = 0;
+
+    function updateSlider() {
+      track.style.transform = `translateX(${-index * 600}px)`;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      index = (index > 0) ? index - 1 : slides.length - 1;
+      updateSlider();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      index = (index < slides.length - 1) ? index + 1 : 0;
+      updateSlider();
+    });
+
+    window.addEventListener("resize", updateSlider);
+  });
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("navbar");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+  
+  </script>
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+<header>
+  <div class="logo-brand">
+    <img src="logo-creativemode.png" alt="Logo" class="logo" />
+  </div>
+  <div class="menu-toggle" id="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="https://www.instagram.com/a_darxh_08/?hl=en" target="_blank">Instagram</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+ <div id="nav-toggle" class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+   <!-- Home Section -->
+        <section id="home" class="section">
+  <h2 class="welcome-text">Welcome to CREATIVE mode!</h2>
+            <p id="quote">“In photography there is a reality so subtle that it becomes more real than reality.” - Alfred Stieglitz</p>
+        </section>
+    </div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+<h2 class="gallery-heading">Gallery</h2>
+
+        <p>"Step into the world of captivating moments and breathtaking vistas with our photography gallery. From the
+            golden hues of sunrise to the vibrant colors of cityscapes, our collection of photographs is a testament to
+            the power of the lens to capture the beauty and essence of life. Explore the intricate details of nature's
+            wonders, the vibrant energy of urban landscapes, and the quiet intimacy of human moments, all presented with
+            a keen eye for composition and a deep appreciation for the art of photography. Let the images transport you
+            to new horizons, evoke emotions, and inspire your own creative journey."</p>
+        <div class="gallery-container">
+            <!-- Dynamically load images here -->
+       <img src="1.jpg" alt="Photo 1">
+      <img src="2.jpg" alt="Photo 1"><img src="3.jpg" alt="Photo 1"><img src="4.jpg" alt="Photo 1"><img src="5.jpg" alt="Photo 1"><img src="6.jpg" alt="Photo 1"><img src="7.jpg" alt="Photo 1"><img src="8.jpg" alt="Photo 1"><img src="9.jpg" alt="Photo 1"><img src="10.jpg" alt="Photo 1"><img src="11.jpg" alt="Photo 1"><img src="12.jpg" alt="Photo 1"><img src="13.jpg" alt="Photo 1"><img src="14.jpg" alt="Photo 1"><img src="15.jpg" alt="Photo 1"><img src="16.jpg" alt="Photo 1"><img src="17.jpg" alt="Photo 1"><img src="18.jpg" alt="Photo 1"><img src="19.jpg" alt="Photo 1"><img src="20.jpg" alt="Photo 1"><img src="21.jpg" alt="Photo 1"><img src="22.jpg" alt="Photo 1"><img src="23.jpg" alt="Photo 1"><img src="24.jpg" alt="Photo 1"><img src="25.jpg" alt="Photo 1"><img src="26.jpg" alt="Photo 1"><img src="27.jpg" alt="Photo 1"><img src="28.jpg" alt="Photo 1"><img src="29.jpg" alt="Photo 1"><img src="30.jpg" alt="Photo 1"><img src="31.jpg" alt="Photo 1"><img src="32.jpg" alt="Photo 1"><img src="33.jpg" alt="Photo 1"><img src="34.jpg" alt="Photo 1"><img src="35.jpg" alt="Photo 36"><img src="1.jpg" alt="Photo 37"><img src="38.jpg" alt="Photo 1"><img src="39.jpg" alt="Photo 1"><img src="40.jpg" alt="Photo 1"><img src="41.jpg" alt="Photo 42">
+
+    </section>
+ 
+
+
+  <section id="about" class="section about">
+    <h2>Instagram</h2>
+    <p>Hi, I'm Ammu! I'm passionate about capturing life through a lens. I believe every photo tells a story—and I love telling those stories.</p>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Email: ammu@example.com</p>
+    <p>Instagram: @ammus_photos</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ammu's Photography. All rights reserved.</p>
+  </footer>
+</body>
+</html>
